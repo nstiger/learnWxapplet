@@ -1,0 +1,50 @@
+<!--pages/event/event.wxml-->
+  <import src="../public/tpl.wxml"/>
+
+<view>
+  <text class="topic-group">事件</text>
+    <view class="topic-item" id="taptest" data-hi="MINA" data-element="hi, Mina" bindtap="tapname"> click me! 
+    </view>
+
+
+<!--事件冒泡，三层view包含关系, 用catch防止冒泡-->
+  <text class="topic-group">事件冒泡</text>
+  <view id="outer" bindtap="handletap1">outer view
+    <view id="middle" catchtap="handletap2">middle view 
+      <view id="inner" bindtap="handletap3">inner view
+      </view>
+    </view>
+  </view>
+
+  <!--import与include的用法-->
+  <text class="topic-group">import引用</text>
+  <view>
+
+  <template is="item" data="{{text:'使用了import文件中的template'}}"/>
+  </view>
+
+  <text class="topic-group">include引用...</text>
+  <view class="topic-item">
+  <include src="../public/tpl.wxml"/>
+  <template is="item" data="{{text:'使用了include文件中的template，并且不是template的内容也显示了。'}}"/>
+  </view>
+
+  <!--调用wxAPI之播放背景音乐-->
+  <text class="topic-group">背景音乐</text>
+  <view>
+    <view class="button-wrap">
+      <button bindtap="showMusic" type="primary">播放背景音乐</button>
+    </view>
+    <view class="button-wrap">
+      <button bindtap="pauseMusic" type="primary">暂停</button>
+    </view>
+    <view class="button-wrap">
+      <button bindtap="stopMusic" type="primary">停止</button>
+    </view>
+  </view>
+
+
+
+
+
+</view>

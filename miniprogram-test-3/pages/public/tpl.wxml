@@ -1,0 +1,8 @@
+<!--tpl.wxml-->
+<view>
+<text class="red-color">我不包含在template中</text>
+</view>
+<template name="item">
+  <text>{{text}}
+  </text>
+</template>

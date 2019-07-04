@@ -1,0 +1,16 @@
+/* pages/event/event.wxss */
+.topic-group{
+  background-color: #ccc
+
+}
+.topic-item{
+  border: 1px solid
+}
+.red-color{
+  color:rgb(250, 9, 9)
+}
+
+.button-wrap{
+  margin: 10px;
+  padding:10rpx
+}
