@@ -51,6 +51,16 @@ Page({
     wx.stopBackgroundAudio();
   },
 
+  chooseVideo:function(){
+    console.log("chooseVideo");
+      wx.chooseVideo({
+
+    })
+  },
+
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */

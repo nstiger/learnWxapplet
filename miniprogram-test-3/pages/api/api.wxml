@@ -1,0 +1,51 @@
+<!--pages/api/api.wxml-->
+
+
+<view class="container">
+  <text class="topic-group">数据缓存</text>
+  <button bindtap="setStorage" type="primary">异步设置缓存</button>
+  <button bindtap="getStorage" type="primary">异步获取缓存</button>
+  <button bindtap="removeStorage" type="primary">异步移除缓存</button>
+  <button bindtap="clearStorage" type="primary">异步清除缓存</button>
+  <button bindtap="getStorageInfo" type="primary">异步获取缓存信息</button>
+  <button bindtap="setStorageSync" type="primary">同步设置缓存</button>
+  <button bindtap="getStorageSync" type="primary">同步获取缓存</button>
+  <button bindtap="removeStorageSync" type="primary">同步移除缓存</button>
+  <button bindtap="clearStorgaeSync" type="primary">同步清除缓存</button>
+  <button bindtap="getStorageInfoSync" type="primary">同步获取缓存信息</button>
+
+  <text class="topic-group">交互反馈</text>
+  <button bindtap="showToast" type="primary">消息提示框</button>
+  <button bindtap="showModal" type="primary">消息校验框</button>
+  <button bindtap="showLoading" type="primary">载入提示</button>
+  <button bindtap="showActionSheet" type="primary">弹出菜单</button>
+
+
+<!--weui用法，测试-->
+    <view class="weui-cells__title">带说明的列表项</view>
+    <view class="weui-cells">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <p>标题文字</p>
+            </view>
+            <view class="weui-cell__ft">说明文字</view>
+            
+        </view>
+                <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <p>标题文字</p>
+            </view>
+            <view class="weui-cell__ft">说明文字</view>
+            
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <p>标题文字</p>
+            </view>
+            <view class="weui-cell__ft">说明文字</view>
+            
+        </view>
+
+    </view>
+
+</view>

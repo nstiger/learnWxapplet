@@ -43,6 +43,13 @@
     </view>
   </view>
 
+  <!--调用wxAPI之播放选择视频-->
+  <text class="topic-group">视频</text>
+  <view>
+    <view class="button-wrap">
+      <button bindtap="chooseVideo" type="primary">播放视频</button>
+    </view>
+  </view>
 
 
 

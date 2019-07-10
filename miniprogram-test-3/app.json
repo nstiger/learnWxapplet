@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/event/event"
+    "pages/event/event",
+    "pages/api/api"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,21 +11,24 @@
     "navigationBarTitleText": "微信",
     "navigationBarTextStyle": "black"
   },
-
   "tabBar": {
     "color": "#000",
     "selectedColor": "#56abe4",
     "backgroundColor": "#ffffff",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/event/event",
-      "text": "event"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/event/event",
+        "text": "event"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "api"
+      }
+    ]
   },
-
-
-
   "sitemapLocation": "sitemap.json"
 }
